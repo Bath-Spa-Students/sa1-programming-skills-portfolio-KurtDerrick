@@ -29,13 +29,13 @@ max_attempts = 5 # set the maximum number of attempts
 
 attempts = 0  # initialize attempts counter
 while attempts < max_attempts:
-    user_input = str(input("Enter your password/answer: "))
+    user_input = str(input("Enter your password: "))
     # check if user input is correct
     if user_input == pass_word:
         print("Access granted!")
         break  # exit loop on success
     attempts += 1  # increment attempts counter
     if attempts == max_attempts:
-        print("Too many incorrect attempts. Game over.")
+        print("Too many incorrect attempts. Authoritize have been alerted.")
         break  # exit loop on max attempts reached
     
