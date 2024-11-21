@@ -16,12 +16,12 @@ attempts. If the maximum number of attempts is reached, inform the user that the
 password = 12345
 
 while password:
-  userinput = int(input("Enter passcode: "))
+  userinput = int(input("Enter passcode: ")) # User enters input
   if int(userinput) != 12345:
-      print("Incorrect")
+      print("Incorrect")   
   elif userinput == 12345:
      print("Correct")
-     break
+     break # exit loop if user enters correct password
 
 # Advanced requirement
 pass_word = ("12345")
@@ -34,7 +34,7 @@ while attempts < max_attempts:
     if user_input == pass_word:
         print("Access granted!")
         break  # exit loop on success
-    attempts += 1  # increment attempts counter
+    attempts += 1  # increase attempts counter
     if attempts == max_attempts:
         print("Too many incorrect attempts. Authoritize have been alerted.")
         break  # exit loop on max attempts reached
