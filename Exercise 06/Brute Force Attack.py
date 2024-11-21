@@ -12,16 +12,17 @@ The program should keep asking the user to enter the password until they provide
 Modify the program to include a maximum of 5 password attempts. If the user enters the wrong password, inform them of the remaining
 attempts. If the maximum number of attempts is reached, inform the user that the authorities have been alerted.
 '''
-'''
+
 password = 12345
 
 while password:
-  #pass_word = int(input("Enter passcode: "))
-  if int(pass_word) != 12345:
+  userinput = int(input("Enter passcode: "))
+  if int(userinput) != 12345:
       print("Incorrect")
-  elif pass_word == 12345:
+  elif userinput == 12345:
      print("Correct")
-'''
+     break
+
 # Advanced requirement
 pass_word = ("12345")
 max_attempts = 5 # set the maximum number of attempts
